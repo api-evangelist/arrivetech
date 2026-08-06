@@ -1,8 +1,16 @@
 aid: arrivetech
 name: Arrive AI
-description: 'Arrive AI is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Arrive AI (Nasdaq: ARAI) is an autonomous last-mile delivery company
+  headquartered in Fishers, Indiana, founded by Dan O''Toole and originally operating
+  as DroneDek. Its patented Autonomous Last Mile (ALM) platform is anchored by the
+  Arrive Point, an AI-powered smart mailbox that accepts and dispatches parcels to
+  and from drones, ground robots and human couriers, with temperature-controlled
+  compartments, real-time tracking, smart logistics alerts and chain-of-custody
+  controls aimed at healthcare, pharmacy and e-commerce logistics. The company
+  markets hardware plus a network service; as of this profile it publishes no public
+  developer program, API reference or machine-readable specification.'
 url: https://raw.githubusercontent.com/api-evangelist/arrivetech/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/67c5de33fe42ad3c82b5dbd6/69c56c61748119558955dff3_ArriveAI_Logo.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +20,15 @@ created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Logistics
+- Last Mile Delivery
+- Autonomous Delivery
+- Drones
+- Robotics
+- Smart Lockers
+- Healthcare Logistics
+- Supply Chain
+- Internet of Things
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,67 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/arrivetech-domain-security.yml
+- type: LLMsTxt
+  url: llms/arrivetech-llms.txt
 - type: Website
+  url: https://www.arriveai.com/
+- type: About
+  url: https://www.arriveai.com/about
+- type: Blog
+  url: https://www.arriveai.com/blog
+- type: Support
+  url: https://www.arriveai.com/contact
+- type: GitHubOrganization
+  url: https://github.com/arriveai
+- type: TermsOfService
+  url: https://www.termsfeed.com/live/a14c73d9-ad66-4fd9-aa7f-a4b0f0f3b0dc
+- type: PrivacyPolicy
+  url: https://www.termsfeed.com/live/129c7035-bb28-4c6d-b463-87264126bb07
+- type: InvestorRelations
+  url: https://investors.arriveai.com/
+- type: PressReleases
+  url: https://www.arriveai.com/press-releases
+- type: MediaCoverage
+  url: https://www.arriveai.com/media-coverage
+- type: IntellectualProperty
+  url: https://www.arriveai.com/intellectual-property
+- type: Careers
+  url: https://www.arriveai.com/careers
+- type: LinkedIn
+  url: https://www.linkedin.com/company/arriveai
+- type: Twitter
+  url: https://x.com/arrive_ai
+- type: YouTube
+  url: https://www.youtube.com/@Arrive_AI
+- type: Facebook
+  url: https://www.facebook.com/ArriveAI/
+- type: Instagram
+  url: https://www.instagram.com/arrive_ai/
+- type: SecondaryMarket
   url: https://forgeglobal.com/arrivetech_stock/
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Arrive AI sells a smart-mailbox network but publishes nothing for developers — the
+    word "API" appears nowhere on www.arriveai.com, /developers, /docs, /api, /graphql
+    and /openapi.json all 404, every api./docs./developer./partners. subdomain fails to
+    resolve, and the only integration route is an "integrating with or building on Arrive
+    AI's network" option on the marketing contact form.
+  evidence:
+  - url: https://www.arriveai.com/developers
+    status: 404
+  - url: https://www.arriveai.com/openapi.json
+    status: 404
+  - url: https://www.arriveai.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.arriveai.com/solution
+    status: 200
+  checked: '2026-08-06'

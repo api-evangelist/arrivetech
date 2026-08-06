@@ -1,0 +1,54 @@
+# Arrive AI
+
+> Arrive AI (Nasdaq: ARAI) is an autonomous last-mile delivery company headquartered in
+> Fishers, Indiana. Its patented Autonomous Last Mile (ALM) platform is anchored by the
+> Arrive Point, an AI-powered smart mailbox that accepts and dispatches parcels to and
+> from drones, ground robots and human couriers, with temperature-controlled
+> compartments, real-time tracking, smart logistics alerts and chain-of-custody controls.
+
+Founded by Dan O'Toole (originally as DroneDek), Arrive AI began direct trading on the
+Nasdaq Stock Market as ARAI on 2025-05-15. It sells hardware plus a network service into
+healthcare, pharmacy, retail and general parcel logistics.
+
+## Public API surface
+
+Arrive AI publishes **no public API**. As of 2026-08-06 there is no developer portal, no
+API reference, no SDK, no webhook catalog, and no machine-readable specification
+(OpenAPI, AsyncAPI, GraphQL SDL, Postman collection or JSON Schema) at any Arrive AI
+host. The word "API" does not appear anywhere on www.arriveai.com. The only integration
+route the company publishes is a category on its marketing contact form for parties
+"interested in integrating with or building on Arrive AI's network".
+
+## Company
+
+- [Home](https://www.arriveai.com/): Company overview and the Arrive Point Network.
+- [About](https://www.arriveai.com/about): Mission, leadership team and board.
+- [Solution](https://www.arriveai.com/solution): The Arrive Point smart mailbox and how autonomous handoff works.
+- [Healthcare](https://www.arriveai.com/healthcare): Healthcare and pharmacy logistics use cases.
+- [Intellectual Property](https://www.arriveai.com/intellectual-property): Issued and pending patents covering the ALM platform.
+- [Contact](https://www.arriveai.com/contact): Contact form, including the integration/partner inquiry route.
+- [Careers](https://www.arriveai.com/careers): Open roles.
+
+## News
+
+- [Blog](https://www.arriveai.com/blog): Company writing on autonomous delivery, healthcare logistics and drone policy.
+- [Press Releases](https://www.arriveai.com/press-releases): Official announcements.
+- [Media Coverage](https://www.arriveai.com/media-coverage): Third-party press.
+
+## Investors
+
+- [Investor Relations](https://investors.arriveai.com/): Nasdaq: ARAI filings and investor materials.
+
+## Legal
+
+- [Terms of Service](https://www.termsfeed.com/live/a14c73d9-ad66-4fd9-aa7f-a4b0f0f3b0dc)
+- [Privacy Policy](https://www.termsfeed.com/live/129c7035-bb28-4c6d-b463-87264126bb07)
+
+## Code
+
+- [GitHub organization](https://github.com/arriveai): One public repository, a fork of rustfs/rustfs (S3-compatible object storage). No first-party client libraries are published on npm, PyPI, Maven Central, NuGet, pkg.go.dev, RubyGems, Packagist or crates.io.
+
+---
+generated: 2026-08-06
+method: generated
+source: apis.yml + probed pages on https://www.arriveai.com/ (no /llms.txt is published; https://www.arriveai.com/llms.txt returned 404)

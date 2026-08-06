@@ -1,0 +1,48 @@
+generated: '2026-08-06'
+method: probed
+source: live probes of https://www.arriveai.com/.well-known/*
+summary: >-
+  No /.well-known/ resource is published on any Arrive AI host. Every path below
+  returned a real 404 from the Webflow origin (content-type text/html) — this is a
+  genuine miss, not a soft-404 catch-all: the origin also 404s /openapi.json,
+  /api-docs and /graphql while returning 200 for /about, /solution and /blog.
+  No security.txt, no OpenID/OAuth metadata, no api-catalog, no ai-plugin.json.
+hosts_probed:
+- www.arriveai.com
+- arriveai.com
+- arrive.tech
+notes: >-
+  api.arriveai.com, docs.arriveai.com, developer.arriveai.com, developers.arriveai.com,
+  portal.arriveai.com, app.arriveai.com, status.arriveai.com, partners.arriveai.com and
+  trust.arriveai.com do not resolve (curl exit 6, no DNS A record). arrive.tech 301s to
+  https://www.arriveai.com/ — the two domains are the same property.
+probes:
+- path: /.well-known/security.txt
+  url: https://www.arriveai.com/.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  url: https://www.arriveai.com/.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  url: https://www.arriveai.com/.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  url: https://www.arriveai.com/.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  url: https://www.arriveai.com/.well-known/ai-plugin.json
+  status: 404
+  file: null
+- path: /.well-known/agent-card.json
+  url: https://www.arriveai.com/.well-known/agent-card.json
+  status: 404
+  file: null
+- path: /.well-known/agent.json
+  url: https://www.arriveai.com/.well-known/agent.json
+  status: 404
+  file: null
+checked: '2026-08-06'
